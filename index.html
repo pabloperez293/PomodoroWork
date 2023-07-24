@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@500&family=Lato:wght@400;700;900&family=Tektur:wght@400;600;900&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="borde">
+            <div class="box">
+                <div class="time">
+                    <p class="minutos" id="minutos">07</p>
+                    <p class="puntos" > : </p>
+                    <p class="segundos" id="segundos">07</p>
+                </div>                
+            </div>
+        </div>
+    
+    <div class="indicadores">
+        <p id="trabajo" class="ahora">Trabajar</p>
+        <a href="./">
+            <p class="luego" id="descanso">Descansar</p>
+        </a>
+    </div>
+    <div>
+        <img onclick="comenzar()" src="play.png" alt="play" id="comenzar">
+    </div>
+</div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
