@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(152deg, rgba(0,0,0,1) 35%, rgba(236,28,17,1) 100%);
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-family: 'Eczar', serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Tektur', cursive;
+    font-family: 'VT323', monospace;
+    color: white;
+    font-size: 35px;
+}
+img{
+    filter: invert(50%);
+    margin-top: 50px;
+}
+img:hover{
+    filter: invert(100%);
+}
+.contenedor{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.borde{
+    margin: 100px;
+    border-radius: 15px;
+    background: linear-gradient(28deg, #5c5c5c 0%, #f30f0f 150%);
+}
+.box{
+    position: relative;    
+    background: linear-gradient(28deg, #5c5c5c 0%, #f30f0f 150%);
+    border-radius: 15px;
+    width: 550px;
+    height: 250px;
+}
+.box:before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(28deg, #5c5c5c 0%, #f30f0f 150%);
+    filter: blur(20px);
+    transition: opacity 0.3s;
+}
+.time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 250px;
+}
+.time p{
+    color: wheat;
+    font-size: 125px;
+    letter-spacing: 7px;
+    font-weight: 300;
+}
+.time .p🇺ntos {
+    margin: 0px 10px 15px 10px;
+}
+.indicadores{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+    height: 50px;
+}
+.ahora {
+    font-weight: 700;
+    font-size: 45px;
+    background: linear-gradient(28deg, #5c5c5c 0%, #f30f0f 150%);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: font-weight .5s, font-size .5s ;
+}
+.luego{
+    font-weight: 100;
+    font-size: 35px;
+    transition: font-weight .5s, font-size .5s;
+}
